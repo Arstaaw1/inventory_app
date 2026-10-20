@@ -8,7 +8,7 @@ Sistem Informasi Manajemen Inventaris dan Transaksi Stok berbasis web untuk meng
 
 Diagram berikut menggambarkan rancangan relasi antar-tabel dalam basis data inventory_app_db:
 
-![Entity Relationship Diagram](assets/img/erd.png)
+![Entity Relationship Diagram](assets/erd.png)
 
 ### Deskripsi Struktur Data
 - **CATEGORIES**: Menyimpan data kategori produk untuk pengelompokan barang.
@@ -21,7 +21,7 @@ Diagram berikut menggambarkan rancangan relasi antar-tabel dalam basis data inve
 ## Antarmuka dan Penjelasan Fitur Utama
 
 ### 1. Dashboard Overview
-![Dashboard Overview](assets/img/dashboard.png)
+![Dashboard Overview](assets/dashbooard.png)
 
 **Penjelasan Fitur:**
 - **Statistik Utama**: Menampilkan indikator total produk, nilai total aset inventaris, dan jumlah produk dengan status stok rendah secara real-time.
@@ -31,7 +31,7 @@ Diagram berikut menggambarkan rancangan relasi antar-tabel dalam basis data inve
 ---
 
 ### 2. Manajemen Daftar Produk
-![Daftar Produk](assets/img/products.png)
+![Daftar Produk](assets/products.png)
 
 **Penjelasan Fitur:**
 - **Katalog Produk**: Menampilkan seluruh data produk dalam bentuk tabel yang rapi beserta indikator SKU, kategori, dan harga.
@@ -42,7 +42,7 @@ Diagram berikut menggambarkan rancangan relasi antar-tabel dalam basis data inve
 ---
 
 ### 3. Form Olah Data Produk
-![Form Produk](assets/img/product-form.png)
+![Form Produk](assets/products-form.png)
 
 **Penjelasan Fitur:**
 - **Input Data Interaktif**: Formulir terstandarisasi untuk menambah produk baru maupun memperbarui data produk yang sudah ada.
@@ -52,7 +52,7 @@ Diagram berikut menggambarkan rancangan relasi antar-tabel dalam basis data inve
 ---
 
 ### 4. Riwayat Transaksi dan Mutasi Stok
-![Riwayat Stok](assets/img/stock.png)
+![Riwayat Stok](assets/stock.png)
 
 **Penjelasan Fitur:**
 - **Pencatatan Mutasi**: Halaman khusus untuk mencatat pergerakan barang masuk dan barang keluar yang secara otomatis memutakhirkan jumlah stok produk terkait.
@@ -98,11 +98,12 @@ Berikut adalah panduan singkat cara menjelajahi dan menggunakan fitur aplikasi m
 ## Petunjuk Instalasi dan Penggunaan
 
 ### 1. Persyaratan Sistem
-- Web Server seperti XAMPP, Nginx, atau Apache
+- Web Server lokal seperti Laragon (disarankan) atau XAMPP
 - PHP versi 8.0 atau yang lebih baru
 - MySQL Database Server
 
-### 2. Langkah Instalasi
-1. Klon repositori ini ke dalam direktori server lokal seperti htdocs untuk pengguna XAMPP:
-   ```bash
-   git clone https://github.com/Arstaaw1/inventory_app
+### 2. Langkah Instalasi (Menggunakan Laragon)
+1. Buka Terminal Laragon atau Git Bash, lalu masuk ke direktori web server Laragon:
+   bash
+   cd C:\laragon\www
+   git clone https://github.com/Arstaaw1/inventory_app.git inventory-app
